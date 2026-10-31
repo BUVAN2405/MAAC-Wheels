@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-title: 'Bebas Neue', system-ui, sans-serif;
+    --font-heading: 'Bebas Neue', system-ui, sans-serif;
+    --font-subheading: 'Montserrat', system-ui, sans-serif;
+    --font-body: 'Montserrat', system-ui, sans-serif;
+    --font-button: 'Montserrat', system-ui, sans-serif;
+    --font-price: 'Bebas Neue', system-ui, sans-serif;
+    --font-label: 'Montserrat', system-ui, sans-serif;
+    --font-code: 'JetBrains Mono', monospace;
+
+    /* Green Palette Design Tokens */
+    --color-deep-green-bg: #0d231a;
+    --color-deep-green-surface: #122c21;
+    --color-deep-green-card: #163629;
+    --color-deep-green-border: #234d3b;
+    --color-olive-dark: #2a4838;
+    --color-olive: #3b5f4c;
+    --color-olive-light: #527e65;
+    --color-mint: #34d399;
+    --color-mint-light: #a7f3d0;
+    --color-mint-bright: #6ee7b7;
+    --color-accent-black: #060c09;
+
+    --accent: #34d399;
+    --accent-hover: #10b981;
+    --accent-red: #ef4444;
+  }
+
+  html {
+    font-size: 16px;
+    background-color: #0d231a;
+  }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    background-color: #0d231a;
+    color: #f0fdf4;
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Title & Main Headings */
+  h1, h2 {
+    font-family: var(--font-title);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  /* Subheadings */
+  h3, h4, h5, h6 {
+    font-family: var(--font-subheading);
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  /* Buttons */
+  button {
+    font-family: var(--font-button);
+    font-weight: 700;
+  }
+}
+
+/* Explicit Automotive Typography Utilities per System Guidelines */
+.font-title,
+.font-bebas {
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.font-heading,
+.font-display {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.font-subheading {
+  font-family: var(--font-subheading);
+  font-weight: 600;
+}
+
+.font-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.font-button {
+  font-family: var(--font-button);
+  font-weight: 700;
+}
+
+.font-price {
+  font-family: var(--font-price);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.font-label {
+  font-family: var(--font-label);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.font-mono-code {
+  font-family: var(--font-code);
+}
+
+/* Custom scrollbars in deep green & olive */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a523e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34d399;
+}
